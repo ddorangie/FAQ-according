@@ -1,18 +1,72 @@
+@media (min-width: 1024px) {
+    
+}
+
+
+
+
 body {
     background-color:  hsl(275, 100%, 97%);
     margin: 0;
     font-family: 'Work Sans';
+    align-items: start;
 }
 
 .background-wallpaper {
-   width: 100%;
-   height: auto;
-   margin: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+    top: 0;
 }
 
 .main-block {
-    width: 80%;
-    margin: -25% auto 0 auto;
+    width: 70%;
+    margin: 10% auto;
     background-color: hsl(0, 100%, 100%);
-    z-index: ;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 27px;
+    color: hsl(292, 42%, 14%);
+}
+
+.question {
+    color: hsl(292, 42%, 14%);
+    font-weight: 600;
+}
+
+p {
+    color: hsl(292, 16%, 49%);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.block-title {
+    display: flex;
+}
+
+.img-star {
+    width: 1.5em;
+    height: auto;
+    padding-right: 1em;
+}
+
+.block-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-question svg {
+    align-items: end;
+    flex-shrink: 0;
+}
+
+.img-minus, .img-plus {
+    width: 45px;
+    height: 45px;
+    object-fit: fill;
 }
