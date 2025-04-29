@@ -79,7 +79,7 @@ p {
     flex-shrink: 0;
 }
 
-.img-minus, .img-plus {
+.img-minus .img-plus {
     width: 45px;
     height: 45px;
     object-fit: fill;
@@ -98,8 +98,26 @@ p {
     cursor: pointer;
 }
 
-.img-minus:hover {
-    transform: scale(1.2);
+.img-plus:active {
+    transform: scale(1);
     transition: transform 200ms;
     cursor: pointer;
+}
+
+.answer {
+    display: none;
+    transition: all 200ms;
+}
+
+.answer.show {
+    display: block;
+}
+
+.answer:active {
+    display: block;
+
+}
+
+.img-minus.minus {
+    display: none;
 }
