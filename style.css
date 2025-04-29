@@ -1,18 +1,31 @@
-@media (min-width: 1024px) {
-    
+.bg-desktop {
+    display: none;
 }
 
+@media (min-width: 1024px) {
+    .bg-desktop {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: -2;
+        top: 0;
+    }
 
-
+    .bg-mobile {
+        display: none;
+    }
+}
 
 body {
     background-color:  hsl(275, 100%, 97%);
     margin: 0;
     font-family: 'Work Sans';
     align-items: start;
+    cursor: default;
 }
 
-.background-wallpaper {
+.bg-mobile {
     position: absolute;
     width: 100%;
     height: auto;
@@ -36,6 +49,7 @@ body {
 .question {
     color: hsl(292, 42%, 14%);
     font-weight: 600;
+    transition: color 200ms;
 }
 
 p {
@@ -69,4 +83,23 @@ p {
     width: 45px;
     height: 45px;
     object-fit: fill;
+    transition: transform 200ms;
+}
+
+.question:hover {
+    color: #ad28eb;
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.img-plus:hover {
+    transform: scale(1.2);
+    transition: transform 200ms;
+    cursor: pointer;
+}
+
+.img-minus:hover {
+    transform: scale(1.2);
+    transition: transform 200ms;
+    cursor: pointer;
 }
