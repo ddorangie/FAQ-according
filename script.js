@@ -19,3 +19,4 @@ questions.forEach(ques => {
     ques.addEventListener('click', () => showAnswer(ques));
     
 });
+
